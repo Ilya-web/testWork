@@ -20,6 +20,7 @@
     "react-dom": "^18.1.0",
     "react-hook-form": "^7.31.1",
     "react-hook-form-input": "^1.1.10",
+    "react-image-webp": "^0.8.0",
     "react-input-mask": "^2.0.4",
     "react-modal": "^3.15.1",
     "react-scripts": "^5.0.1",
