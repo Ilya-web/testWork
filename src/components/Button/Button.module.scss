@@ -1,0 +1,28 @@
+@import "src/styles/variables";
+
+.btnSite {
+  display: inline-flex;
+  font-size: 16px;
+  line-height: 1;
+  padding: 9px 19px;
+  justify-content: center;
+  border-radius: 80px;
+  border: 0;
+  background: $Primary;
+  cursor: pointer;
+  color: $mainColor;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  min-width: 100px;
+
+  &:not(&Disabled) {
+    &:hover {
+      background: $PrimaryHover;
+    }
+  }
+
+  &Disabled {
+    background: $Gray;
+    cursor: no-drop;
+  }
+}
