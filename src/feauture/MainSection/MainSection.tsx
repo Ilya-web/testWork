@@ -16,7 +16,7 @@ export const MainSection: React.FC = () => {
             interfaces with accessibility in mind. They should also be excited to learn, as the
             world of Front-End Development keeps evolving.
           </p>
-          <Button link="/#singUp">Sign up</Button>
+          <Button link="#singUp">Sign up</Button>
         </div>
       </div>
     </Container>
