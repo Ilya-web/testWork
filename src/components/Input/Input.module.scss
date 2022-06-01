@@ -1,0 +1,66 @@
+@import "src/styles/variables";
+
+.rowInput {
+  margin-bottom: 50px;
+}
+
+.wrapInput {
+  position: relative;
+}
+.inputSite {
+  width: 100%;
+  border: 1px solid #D0CFCF;
+  border-radius: 4px;
+  background: transparent;
+  padding: 18.5px 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.inputError {
+  border: 2px solid $Error;
+}
+
+.label {
+  color: #7E7E7E;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  background: $BgColor;
+  z-index: -1;
+  transition: all ease 0.2s;
+  font-family: 'Nunito', sans-serif;
+  &Active {
+    top: -6px;
+    transform: translateY(0);
+    z-index: 2;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    padding: 0 4px;
+  }
+
+  &Error {
+    color: $Error;
+  }
+}
+
+.errorText {
+  color: $Error;
+  font-size: 12px;
+  line-height: 14px;
+  padding-left: 16px;
+  display: block;
+  margin-top: 4px;
+}
+
+.helperText {
+  font-size: 12px;
+  line-height: 14px;
+  color: $Gray-2;
+  padding-left: 16px;
+  margin-top: 4px;
+}

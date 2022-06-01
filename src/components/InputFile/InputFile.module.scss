@@ -1,0 +1,86 @@
+@import "src/styles/variables";
+
+.inputFileRow {
+  margin-bottom: 50px;
+}
+
+.wrapInputFile {
+  display: flex;
+  position: relative;
+  background: $BgColor;
+  border: 1px solid #D0CFCF;
+  border-radius: 4px;
+
+  input[type='file'] {
+    display: none;
+  }
+
+  &Error {
+    border-color: $Error;
+  }
+}
+
+.inputFile {
+  &Title {
+    padding: 13px 14px 13px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.87);
+    border-radius: 4px 0 0 4px;
+    margin: -1px;
+    cursor: pointer;
+
+    &Error {
+      border-color: $Error;
+    }
+  }
+
+  &Name {
+    padding: 13px 14px 13px 16px;
+    color: $Gray-2;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &Active {
+    color: $mainColor;
+  }
+
+  &Clean {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    z-index: 2;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    display: block;
+
+    svg {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.errorText {
+  color: $Error;
+  font-size: 12px;
+  line-height: 14px;
+  padding-left: 16px;
+  display: block;
+  margin-top: 4px;
+}
+
+.helperText {
+  font-size: 12px;
+  line-height: 14px;
+  color: $Gray-2;
+  padding-left: 16px;
+  margin-top: 4px;
+}

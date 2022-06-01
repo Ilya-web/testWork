@@ -1,0 +1,48 @@
+.users {
+  padding-top: 40px;
+  margin-bottom: 100px;
+
+  &Items {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 300px){
+      margin: -20px -16px 50px;
+    }
+    @media screen and (min-width: 768px){
+      margin: -16px -8px 50px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin: -29px -14.5px 50px;
+    }
+  }
+
+  &Item {
+    @media screen and (min-width: 300px){
+      width: 100%;
+      padding: 20px 16px 0;
+    }
+    @media screen and (min-width: 768px){
+      width: calc(100% / 2);
+      padding: 16px 8px 0;
+    }
+    @media screen and (min-width: 1024px){
+      width: calc(100% / 3);
+      padding: 29px 14.5px 0;
+    }
+  }
+
+  &Button {
+    display: flex;
+    button {
+      margin: auto;
+    }
+  }
+
+  :global {
+    .h1 {
+      text-align: center;
+    }
+  }
+}
+

@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.mainSection {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/mainBg.jpeg") no-repeat center center / cover;
+  margin-bottom: 100px;
+  padding: 0 16px;
+
+  &Content {
+    max-width: 380px;
+    margin: auto;
+    text-align: center;
+    color: $White;
+    @media screen and (min-width: 300px){
+      padding: 40px 0 71px;
+    }
+    @media screen and (min-width: 768px){
+      padding: 89px 0 88px;
+    }
+    @media screen and (min-width: 1024px){
+      padding: 164px 0;
+    }
+  }
+
+  &Desc {
+    margin-bottom: 32px;
+  }
+
+  .mb {
+    margin:0 0 21px;
+  }
+
+}
+
+
+

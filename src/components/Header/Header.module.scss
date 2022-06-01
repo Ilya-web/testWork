@@ -1,0 +1,27 @@
+@use "src/styles/App";
+
+.header {
+  background: #fff;
+  padding: 13px 0;
+
+  &Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &Logo {
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  &Buttons {
+    display: flex;
+  }
+
+}
+.btnSite {
+  margin-left: 10px;
+}
