@@ -14,10 +14,10 @@ export const Header: React.FC = () => {
             <img src={logo} alt="logo" />
           </div>
           <div className={styles.headerButtons}>
-            <Button link="/#users" className={styles.btnSite}>
+            <Button link="#users" className={styles.btnSite}>
               Users
             </Button>
-            <Button link="/#singUp" className={styles.btnSite}>
+            <Button link="#singUp" className={styles.btnSite}>
               Sign up
             </Button>
           </div>
